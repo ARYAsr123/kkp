@@ -1,0 +1,83 @@
+/* form_pendaftaran.css */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 1px; /* Ubah dari 10px menjadi 5px */
+    text-align: center;
+    font-size: 10px; /* Ubah dari 24px menjadi 20px */
+}
+form {
+    width: 60%;
+    margin: 20px auto;
+    background-color: #ccffcc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Menambah jarak antar kolom input */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Menambah jarak antara label dan input */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px; /* Menambah padding dalam input untuk memperbesar kolom */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Menambah jarak antara input dengan elemen berikutnya */
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px; /* Menambah padding untuk tombol */
+    background-color: #004d00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px; /* Menambah jarak antara tombol dan elemen sebelumnya */
+}
+
+button[type="submit"]:hover {
+    background-color: #003300;
+}
+
+.split-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.form-section {
+    width: 48%;
+    padding: 10px; /* Menambah jarak dalam masing-masing section */
+}
+
+
+.form-section h3 {
+    text-align: center;
+    background-color: #004d00;
+    color: white;
+    padding: 5px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+}

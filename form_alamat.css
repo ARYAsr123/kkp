@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #004d00;
+    color: white;
+    padding: 1px;
+    height: 17px;
+    text-align: center;
+}
+
+header h3 {
+    margin: 0;
+}
+
+input[type="text"] {
+    box-sizing: border-box;
+}
+
+button {
+    cursor: pointer;
+}
+
+.full-width-btn {
+    background-color: #004d00;
+    color: white;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    width: 100%; /* Mengatur lebar tombol agar penuh */
+    cursor: pointer;
+}
+
+.label-alamat {
+
+    text-align: center;
+    font-weight: bold;
+}

@@ -1,0 +1,135 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk halaman */
+body {
+    background-color: #C8FFC0; /* Hijau muda */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Ruang untuk navbar */
+    height: 100vh;
+    overflow-x: auto; /* Mengizinkan scroll horizontal */
+    overflow-y: auto; /* Mengizinkan scroll vertikal */
+    text-align: center;
+}
+
+/* Styling untuk judul halaman */
+h2 {
+    font-size: 2rem;
+    color: #356A35; /* Hijau tua */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk subjudul data ayah dan ibu */
+h3 {
+    font-size: 1.5rem;
+    color: #356A35; /* Hijau tua */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Styling untuk form */
+form {
+    width: 60%;
+    max-width: 900px;
+    background-color: #ffffff; /* Latar belakang putih untuk form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling untuk input dan select */
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+
+/* Styling untuk label */
+form label {
+    display: block;
+    font-size: 1rem;
+    color: #356A35; /* Hijau tua */
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+/* Styling untuk tombol simpan */
+form input[type="submit"] {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect untuk tombol simpan */
+form input[type="submit"]:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap saat di-hover */
+}
+
+/* Styling untuk tombol kembali */
+a button {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+/* Hover effect untuk tombol kembali */
+a button:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap saat di-hover */
+}
+
+/* Styling untuk tombol saat error atau berhasil */
+form .message {
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Styling untuk pesan berhasil */
+form .message.success {
+    background-color: #4CAF50; /* Hijau */
+    color: white;
+}
+
+/* Styling untuk pesan error */
+form .message.error {
+    background-color: #f44336; /* Merah */
+    color: white;
+}
+
+/* Styling untuk responsive design */
+@media (max-width: 768px) {
+    form {
+        width: 90%;
+    }
+    
+    form input, form select {
+        font-size: 0.9rem; /* Ukuran font lebih kecil pada layar kecil */
+    }
+
+    form input[type="submit"], a button {
+        font-size: 0.9rem;
+    }
+}

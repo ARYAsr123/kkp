@@ -1,0 +1,152 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling untuk halaman */
+body {
+    background-color: #C8FFC0; /* Hijau muda */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Ruang untuk navbar */
+    height: 100vh;
+    overflow-x: auto; /* Mengizinkan scroll horizontal */
+    overflow-y: auto; /* Mengizinkan scroll vertikal */
+    text-align: center;
+}
+
+/* Styling untuk judul halaman */
+h2 {
+    font-size: 2rem;
+    color: #356A35; /* Hijau tua */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk form filter status seleksi */
+form {
+    margin-bottom: 20px;
+}
+
+form button {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap saat di-hover */
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    table-layout: fixed; /* Lebar tetap untuk setiap kolom */
+    overflow-x: auto; /* Scroll horizontal untuk tabel */
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+}
+
+/* Styling untuk header tabel */
+th {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    padding: 10px;
+    font-size: 1.1rem;
+    min-width: 120px; /* Menambahkan lebar minimum pada header */
+}
+
+/* Styling untuk data tabel */
+td {
+    background-color: white; /* Setiap baris menjadi putih */
+    padding: 10px;
+    text-align: left;
+}
+
+/* Styling untuk baris tabel */
+tr {
+    background-color: white; /* Setiap baris menjadi putih */
+}
+
+tr:hover {
+    background-color: #f0f0f0; /* Warna abu-abu terang saat hover */
+}
+
+/* Styling untuk link edit dan hapus */
+a {
+    text-decoration: none;
+    color: #356A35; /* Hijau tua */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #2d5930; /* Warna hijau gelap saat di-hover */
+}
+
+/* Styling untuk tombol */
+button {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap saat di-hover */
+}
+
+/* Styling untuk tautan tombol */
+a button {
+    text-decoration: none;
+}
+
+/* Untuk tampilan pada perangkat dengan layar kecil (responsive) */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        overflow-x: scroll; /* Scrollable tabel pada perangkat kecil */
+        -webkit-overflow-scrolling: touch; /* Mengaktifkan scroll touch-friendly */
+    }
+
+    th, td {
+        font-size: 0.9rem; /* Ukuran font lebih kecil pada layar kecil */
+        min-width: 100px; /* Mengurangi lebar minimum untuk kolom */
+    }
+
+    /* Atur margin dan padding pada tombol agar lebih responsif */
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin: 8px;
+    }
+}
+
+/* Container untuk tabel, memungkinkan scroll horizontal */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto; /* Agar tabel bisa digulirkan secara horizontal */
+}
+
+/* Gaya untuk tabel pada layar kecil */
+@media (max-width: 768px) {
+    .table-wrapper {
+        padding: 10px; /* Beri sedikit ruang di sekitar tabel */
+    }
+
+    table {
+        min-width: 800px; /* Sesuaikan lebar tabel agar tidak terpotong */
+    }
+}

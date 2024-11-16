@@ -1,0 +1,110 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styling for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #C8FFC0; /* Hijau muda */
+    color: #333;
+    padding: 60px 20px 20px 20px; /* Menambahkan ruang untuk navbar */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    overflow-x: auto;
+    overflow-y: auto;
+}
+
+/* Heading styling */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #356A35; /* Hijau tua */
+}
+
+/* Styling for the table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+tr {
+    background-color: #fff; /* Warna latar belakang putih untuk setiap baris */
+}
+
+/* Table header */
+table th {
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    padding: 12px 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Table rows */
+table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+/* Hover effect on rows */
+table tr:hover {
+    background-color: #e2e6ea; /* Light blue */
+}
+
+/* Link style for actions */
+table a {
+    color: #356A35; /* Hijau tua */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for buttons */
+button {
+    padding: 12px 20px;
+    background-color: #356A35; /* Hijau tua */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap */
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        overflow-x: scroll; /* Scrollable table on small screens */
+        -webkit-overflow-scrolling: touch;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        min-width: 100px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 0.9rem;
+        margin: 8px;
+    }
+}

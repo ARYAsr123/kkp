@@ -1,0 +1,135 @@
+/* Reset margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+/* Styling untuk halaman dashboard */
+body.dashboard {
+    background-color: white; /* Hijau muda */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 60px; /* Ruang untuk navbar */
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Styling untuk navbar */
+nav {
+    width: 100%;
+    background-color: #004d00; /* Hijau untuk navbar */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+nav .menu {
+    display: flex;
+    gap: 20px;
+}
+
+nav .logout-btn {
+    background-color: #2f855a;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav .logout-btn:hover {
+    background-color: #276749;
+}
+
+/* Styling untuk konten utama */
+.dashboard-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 1px 1px 5px black;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.dashboard-container h2 {
+    font-size: 2rem;
+    color: #2f855a;
+    margin-bottom: 20px;
+}
+
+.dashboard-container p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.dashboard-container button {
+    background-color: #2f855a;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease;
+    
+}
+
+.dashboard-container button:hover {
+    background-color: #276749;
+}
+
+.dashboard-container a {
+    text-decoration: none;
+}
+
+.dashboard-container .daftar-btn {
+    background-color: #356A35;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.dashboard-container .daftar-btn:hover {
+    background-color: #004d00;
+}
+
+nav .logout-btn {
+    background-color: #e53e3e; /* Warna merah */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+nav .logout-btn:hover {
+    background-color: #c53030; /* Warna merah lebih gelap saat di-hover */
+}
+
+nav .menu {
+    display: flex;
+    gap: 20px;
+    margin-left: auto; /* Tambahkan ini untuk menggeser menu ke kanan */
+}

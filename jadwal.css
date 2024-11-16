@@ -1,0 +1,62 @@
+/* Styling untuk halaman */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C8FFC0; /* Latar belakang warna hijau muda */
+    color: #356A35; /* Warna teks utama */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Styling untuk judul halaman */
+h2 {
+    font-size: 1.8rem;
+    color: #356A35; /* Warna teks judul */
+    margin-bottom: 20px;
+}
+
+/* Styling untuk tabel */
+table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    background-color: #ffffff; /* Latar belakang tabel putih */
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+table, th, td {
+    border: 1px solid #356A35;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+th {
+    background-color: #356A35; /* Warna hijau untuk header tabel */
+    color: #ffffff; /* Warna teks putih untuk header */
+}
+
+/* Styling untuk tombol kembali */
+button {
+    background-color: #356A35; /* Warna hijau tua */
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2d5930; /* Warna hijau lebih gelap saat di-hover */
+}
+
+a {
+    text-decoration: none;
+}
